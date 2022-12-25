@@ -1,0 +1,13 @@
+@mixin circle {
+  &:before {
+    content: "";
+    width: 36px;
+    height: 36px;
+    background: $main-color;
+    position: absolute; /* без абсолюта почему то не появляется на экране */
+    border-radius: 100%;
+    z-index: -1;
+    top: -25%;
+    left: 0;
+  }
+}
